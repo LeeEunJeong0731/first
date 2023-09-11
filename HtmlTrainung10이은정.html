@@ -1,0 +1,50 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      color: black;
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>아이디어를 도출하는 방법</h1>
+  <ul>
+    <li>
+      <h2>브레인스토밍</h2>
+      <p>브레인스토밍은 여러 사람이 모여 다양한 아이디어를 자유롭게 제시하는 방법이라고 익히알고있습니다. </p>
+    </li>
+    <li>
+      <h2>SWOT 분석</h2>
+      <p>SWOT 분석은 Sterngths(강점) , Weaknesses(약점)</p>
+    </li>
+    <li>
+      <h2>피시본 다이어그램</h2>
+      <p>피쉬본 다이어그램은 문제의 본질을 이해</p>
+    </li>
+  </ul>
+  <button id="toggleButton"></button>
+
+  <script>
+    const toggleButton = document.getElementById('toggleButton');
+
+    toggleButton.addEventListener('click',function() {
+      const body = document.querySelector('body');
+
+      if (body.style.backgroundColor ==='white'){
+        body.style.backgroundColor ==='black';
+        body.style.color='white';
+      } else {
+        body.style.backgroundColor ='white';
+        body.style.color='black';
+      }
+    });
+  </script>
+</body>
+</html>

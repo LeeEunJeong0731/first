@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <h1 id="prompt-text"></h1>
+
+    <label for="color-value">type want color </label>
+
+    <input for="text" name="color-value" id="color-value">
+
+    <input type="date" name="day" id="day">
+
+  </div>
+  <script>
+    let promptText = document.getElementById('prompt-text');
+    let colorValue=document.getElementById('color-value');
+    let days = document.getElementById('day');
+
+    console.dir(window.document.body);
+    let dateEntered = document.getElementById('dateEntered');
+        colorValue.addEventListener('change',function(){
+          promptText.textContent =colorValue.value;
+          if (colorValue.value==="pink"){
+            colorValue.style.backgroundColor="pink";
+          }
+          if (colorValue.value==="red"){
+            colorValue.style.backgroundColor="red";
+          }
+          if (colorValue.value==="skyblue"){
+            document.body.style.backgroundColor="skyblue";
+            colorValue.style.backgroundColor="skyblue";
+          }
+          days.addEventListener('input',function(){
+            if (days.value>"2023-09-11"){
+              getElementById('day').style.backgroundColor="red";
+            }
+          })
+        })
+  </script>
+</body>
+</html>

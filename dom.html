@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    var a = window.document.body.children[0];
+    // 외우면 안된다. 찾는 법을 알면 된다.
+    // 부모자식 관계 확인 필요.
+    // window.document.body.children[0].textContent="이은정";
+    // a.style.backgroundColor="blue"
+    // a.style.width="100px"
+    // a.style.height="100px"
+    window.document.body.children[0].classList=[value='eunjeong']
+    console.dir(a);
+
+  
+  </script>
+</body>
+</html>

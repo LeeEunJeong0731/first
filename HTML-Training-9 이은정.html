@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    #root{
+      width: 100vw;
+
+      background-color:#484848;
+    }
+    #header{
+      height: 20vh;
+      background-color: #92AC98 ;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: end;
+    }
+    li{
+      display: inline-block;
+      width: 15vw;
+      height: 15vw;
+      background-color:#484848;
+      border-radius: 50%;
+      list-style: none;
+      margin-bottom: 20px;
+    }
+    i{
+      color: #d9d9d9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #content>div:nth-child(1){
+      display: flex;
+    }
+    #content>div:nth-child(1)>div:nth-child(1){
+      width: 20vh;
+      display: flex;
+    }
+    #content>div:nth-child(1)>div:nth-child(1)>div:nth-child(1){
+      width: 11vw;
+      height: 11vw;
+      border-radius: 50%;
+      background-color: #d9d9d9;
+      margin: 20px;
+    }
+    #content>div:nth-child(1)>div:nth-child(1)>div:nth-child(2){
+      margin-top: 30px;
+      color: #fff;
+      font-size: 30px;
+    }
+    #content>div:nth-child(1)>div:nth-child(2){
+      width: 24vh;
+      display: flex;
+      justify-content:end;
+      align-items: center;
+
+    }
+    #content>div:nth-child(1)>div:nth-child(2)>div{
+      width: 2vw;
+      height: 2vw;
+      background-color: #d9d9d9;
+      border-radius: 50%;
+      margin:5px;
+    }
+    #content>div:nth-child(2){
+      height: 80vw;
+    }
+    #content>div:nth-child(3){
+      height: 35vh;
+      background-color: #92AC98;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    #content>div:nth-child(3)>div:nth-child(1){
+      height: 20vh;
+      width: 80vw;
+      background-color: #92AC98;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+
+    }
+
+    #content>div:nth-child(3)>div:nth-child(1)>div:nth-child(2){
+      width: 20vw;
+      display: flex;
+      justify-content:space-around;
+    }
+
+    /* #content>div:nth-child(3)>div:nth-child(1)>div:nth-child(2)>div:nth-child(1){
+      width: 3vw;
+      height: 3vw;
+      background-color: #484848;
+      border-radius: 50%;
+      margin: 5px;
+    } */
+    /* #content>div:nth-child(3)>div:nth-child(1)>div:nth-child(2)>div{
+      width: 3vw;
+      height: 3vw;
+      background-color: #d9d9d9;
+      border-radius: 50%;
+      margin: 5px;
+    } */
+    #trigger4{
+      width: 25px;
+      height: 25px;
+    }
+    #content>div:nth-child(3)>div:nth-child(2){
+      height: 40vh;
+      margin: 10px;
+    }
+    #content>div:nth-child(3)>div:nth-child(2)>p:nth-child(1){
+      font-size:30px;
+      font-weight: 400;
+      color: #484848;
+    }
+    #content>div:nth-child(3)>div:nth-child(2)>p:nth-child(2){
+      margin-top: 30px;
+      color: #484848;
+    }
+  .slide {
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+}
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div id="header">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <!-- 헤더 -->
+    </div>
+    <div id="content">
+      <div>
+        <div>
+         <div></div>
+         <!-- 프로필사진 -->
+        <div>kongukjae</div>
+        <!-- 프로필 이름 -->
+        </div>
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <!-- 점세개 -->
+      </div>
+    <div></div>
+    <div>
+      <div>
+        <i class="fa-solid fa-heart" style="font-size:30px;"></i>
+        <!-- 하트 -->
+        <div>
+          <input type="radio" id="trigger4" name="slider">
+          <input type="radio" id="trigger4" name="slider">
+          <input type="radio" id="trigger4" name="slider">
+        </div>
+        <i class="fa-regular fa-floppy-disk" style="font-size:30px;"></i>
+      </div>
+      <div>
+        <p>kongukjae</p>
+        <p>Lorem ipsum dolor sit amet consectetur. Eleifend vitae ligula vitae leo tortor eget venenatis eget. Mi scelerisque nullam egestas amet tincidunt. Velit elementum mattis tristique ut. Suspendisse consectetur adipiscing molestie ullamcorper id.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

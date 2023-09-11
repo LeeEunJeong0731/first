@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <button>Click</button>
+    <script>
+    let btn=window.document.body.children[0].children[0];
+    let root=window.document.body.children[0];
+    console.dir(btn);
+    console.dir(root);
+
+    let handler = true;//초기화
+
+    btn.addEventListener('click',function(){
+      if(handler===true) {
+        handler = false;
+              //만약 클릭을 하면 false로 바꿔줘
+      }else {
+        handler = true;
+        console.log(handler)
+      }  if (handler === true){
+      window.document.body.style.backgroundColor="black";
+    } else {
+      window.document.body.style.backgroundColor="white";
+    }if (handler === true){
+      window.document.body.style.backgroundColor="black";
+    } else {
+      window.document.body.style.backgroundColor="white";
+    }
+    if (handler === true){
+      btn.style.backgroundColor="pink";
+    } else {
+      btn.style.backgroundColor="plum";
+    }
+    if (handler === true){
+      btn.innerText="밤";
+    }else {
+      btn.innerText="낮";
+    }
+    
+    if (handler === true){
+      root.textContent="이은정";
+    } else{
+      root.textContent="";
+    }
+  }
+    );
+
+    </script>
+  </div>
+</body>
+</html>
